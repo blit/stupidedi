@@ -80,6 +80,7 @@ module Stupidedi
           x.register("00400") { Stupidedi::Versions::Interchanges::FourHundred::InterchangeDef }
           x.register("00401") { Stupidedi::Versions::Interchanges::FourOhOne::InterchangeDef }
           x.register("00501") { Stupidedi::Versions::Interchanges::FiveOhOne::InterchangeDef }
+          x.register("00701") { Stupidedi::Versions::Interchanges::FourOhOne::InterchangeDef }
         end
 
         c.functional_group.customize do |x|
@@ -90,6 +91,7 @@ module Stupidedi
           x.register("003050") { Stupidedi::Versions::FunctionalGroups::ThirtyFifty::FunctionalGroupDef }
           x.register("004010") { Stupidedi::Versions::FunctionalGroups::FortyTen::FunctionalGroupDef }
           x.register("005010") { Stupidedi::Versions::FunctionalGroups::FiftyTen::FunctionalGroupDef }
+          x.register("007010") { Stupidedi::Versions::FunctionalGroups::FortyTen::FunctionalGroupDef }
         end
       end
     end
@@ -146,6 +148,8 @@ module Stupidedi
           x.register("004010", "SQ", "866") { Stupidedi::Contrib::FortyTen::TransactionSetDefs::SQ866 }
           x.register("004010", "FA", "997") { Stupidedi::Contrib::FortyTen::TransactionSetDefs::FA997 }
           x.register("004010", "SC", "832") { Stupidedi::Contrib::FortyTen::TransactionSetDefs::SC832 }
+
+          x.register("007010", "QM", "214") { Stupidedi::Contrib::SeventyTen::TransactionSetDefs::QM214 }
 
           x.register("002001", "SH", "856") { Stupidedi::Contrib::TwoThousandOne::TransactionSetDefs::SH856 }
           x.register("002001", "PO", "830") { Stupidedi::Contrib::TwoThousandOne::TransactionSetDefs::PO830 }
